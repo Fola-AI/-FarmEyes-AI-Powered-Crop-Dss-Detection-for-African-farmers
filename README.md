@@ -130,7 +130,7 @@ FarmEyes combines **YOLOv11** computer vision with **N-ATLaS** multilingual AI t
 </p>
 
 #### 🔬 Disease Detection
-- Real-time crop disease identification using YOLOv11
+- Real-time crop disease identification using YOLOv11s
 - Confidence scoring with severity assessment
 - Support for 6 diseases across 3 crops
 
