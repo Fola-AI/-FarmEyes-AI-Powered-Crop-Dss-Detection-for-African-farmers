@@ -1,0 +1,1115 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "created": "2025-12-13",
+    "description": "FarmEyes Disease Knowledge Base - 6 disease classes for Nigerian farmers. All content in English - N-ATLaS handles runtime translation to Hausa, Yoruba, Igbo.",
+    "crops_covered": [
+      "cassava",
+      "cocoa",
+      "tomato"
+    ],
+    "total_classes": 6,
+    "currency": "NGN",
+    "last_updated": "2025-12-13",
+    "note": "6-class model (diseases only, no healthy classes). N-ATLaS model performs all translations to local languages during app usage."
+  },
+  "diseases": {
+    "cassava_bacterial_blight": {
+      "id": "CBB_001",
+      "class_name": "Cassava Bacteria Blight",
+      "display_name": "Cassava Bacterial Blight",
+      "scientific_name": "Xanthomonas axonopodis pv. manihotis",
+      "crop": "cassava",
+      "category": "bacterial",
+      "is_disease": true,
+      "severity": {
+        "level": "high",
+        "scale": 4,
+        "max_scale": 5,
+        "description": "Severe bacterial disease that can cause significant yield losses, especially during rainy season"
+      },
+      "symptoms": [
+        "Angular leaf spots that appear water-soaked",
+        "Leaf wilting and yellowing starting from the edges",
+        "Gum exudation (bacterial ooze) from stems - sticky yellowish substance",
+        "Dieback of shoot tips and young branches",
+        "Blighting and death of leaves",
+        "Vascular discoloration (brown streaks) when stem is cut",
+        "Canker formation on stems in severe cases"
+      ],
+      "how_it_spreads": [
+        "Infected planting materials (stem cuttings) - most common source",
+        "Rain splash spreading bacteria between plants",
+        "Contaminated cutting tools and farm equipment",
+        "Wind-driven rain carrying bacteria",
+        "Workers' hands and clothing after touching infected plants"
+      ],
+      "favorable_conditions": {
+        "temperature": "25-30°C",
+        "humidity": "Above 80%",
+        "season": "Rainy season (May-October in Nigeria)",
+        "other": "Waterlogged soils, poor drainage, dense plant spacing"
+      },
+      "yield_loss": {
+        "min_percent": 20,
+        "max_percent": 100,
+        "average_percent": 50,
+        "description": "Can cause 20-100% yield loss depending on severity, variety susceptibility, and time of infection"
+      },
+      "treatments": {
+        "cultural": [
+          {
+            "method": "Use disease-free planting materials",
+            "description": "Select healthy stems from certified disease-free fields. Inspect stems carefully before planting.",
+            "effectiveness": "high",
+            "cost_ngn": 0,
+            "timing": "Before planting"
+          },
+          {
+            "method": "Roguing (remove infected plants)",
+            "description": "Immediately remove and burn all infected plants. Do not leave debris in field.",
+            "effectiveness": "high",
+            "cost_ngn_per_hectare": 5000,
+            "timing": "As soon as symptoms appear"
+          },
+          {
+            "method": "Crop rotation",
+            "description": "Plant non-host crops like maize, sorghum, or legumes for 2-3 years before returning cassava to the field.",
+            "effectiveness": "medium",
+            "cost_ngn": 0,
+            "timing": "Seasonal planning"
+          },
+          {
+            "method": "Tool sanitation",
+            "description": "Disinfect cutting tools with 10% bleach solution between plants and fields.",
+            "effectiveness": "high",
+            "cost_ngn": 500,
+            "timing": "During all field operations"
+          }
+        ],
+        "chemical": [
+          {
+            "product_name": "Copper-based bactericide",
+            "active_ingredient": "Copper hydroxide",
+            "local_brands": [
+              "Kocide 101",
+              "Nordox 75",
+              "Funguran-OH",
+              "Champion WP"
+            ],
+            "cost_ngn_min": 8000,
+            "cost_ngn_max": 15000,
+            "cost_unit": "per hectare per application",
+            "dosage": "2-3 kg per hectare in 400-500L water",
+            "frequency": "Every 2-3 weeks during rainy season",
+            "application_method": "Spray thoroughly on leaves and stems, especially undersides of leaves",
+            "effectiveness": "medium",
+            "safety_precautions": [
+              "Wear protective clothing, gloves, and face mask",
+              "Do not spray on windy days",
+              "Avoid contact with skin and eyes",
+              "Wait 7 days before harvest"
+            ]
+          }
+        ],
+        "resistant_varieties": [
+          {
+            "variety_name": "TMS 30572",
+            "resistance_level": "high",
+            "source": "IITA Ibadan, NRCRI Umudike",
+            "cost_ngn_per_bundle": 15000,
+            "notes": "Widely available, good yield potential"
+          },
+          {
+            "variety_name": "TMS 4(2)1425",
+            "resistance_level": "high",
+            "source": "IITA Ibadan",
+            "cost_ngn_per_bundle": 18000,
+            "notes": "High yielding with good disease resistance"
+          },
+          {
+            "variety_name": "NR 8083",
+            "resistance_level": "medium",
+            "source": "NRCRI Umudike",
+            "cost_ngn_per_bundle": 15000,
+            "notes": "Good for multiple disease resistance"
+          }
+        ],
+        "traditional": [
+          {
+            "method": "Wood ash application",
+            "description": "Apply wood ash around plant base after rain. Creates alkaline environment less favorable for bacteria.",
+            "effectiveness": "low",
+            "cost_ngn": 0
+          }
+        ]
+      },
+      "total_treatment_cost": {
+        "min_ngn": 8000,
+        "max_ngn": 25000,
+        "per": "hectare",
+        "notes": "Using resistant varieties is the most cost-effective long-term solution"
+      },
+      "prevention": [
+        "Use certified disease-free planting materials from reputable sources (IITA, NRCRI, accredited seed companies)",
+        "Plant resistant varieties (TMS 30572, TMS 4(2)1425, NR 8083)",
+        "Practice field sanitation - remove all crop debris after harvest",
+        "Avoid working in fields when plants are wet from rain or dew",
+        "Disinfect cutting tools with 10% bleach solution between plants",
+        "Implement 2-3 year crop rotation with non-host crops (maize, legumes)",
+        "Ensure proper drainage to reduce humidity around plants",
+        "Maintain recommended plant spacing (1m x 1m) for good air circulation",
+        "Scout fields regularly for early disease detection"
+      ],
+      "health_projection": {
+        "early_detection": {
+          "recovery_chance_percent": 80,
+          "message": "If treated within 2 weeks of first symptoms appearing, approximately 80% of your field can be saved. Remove infected plants immediately and apply copper spray to remaining plants."
+        },
+        "moderate_infection": {
+          "recovery_chance_percent": 50,
+          "message": "With moderate infection (less than 30% of plants affected), expect 50% yield recovery with immediate treatment. Focus on protecting healthy plants."
+        },
+        "severe_infection": {
+          "recovery_chance_percent": 20,
+          "message": "Severe infection requires removing all affected plants. Only 20% may be salvageable. Consider replanting with resistant varieties next season."
+        }
+      },
+      "expert_contact": {
+        "institution": "National Root Crops Research Institute (NRCRI)",
+        "location": "Umudike, Abia State, Nigeria",
+        "services": "Disease diagnosis, resistant variety seeds, extension services"
+      }
+    },
+    "cassava_mosaic_virus": {
+      "id": "CMD_001",
+      "class_name": "Cassava Mosaic Virus",
+      "display_name": "Cassava Mosaic Virus",
+      "scientific_name": "Cassava mosaic geminiviruses (CMGs) - African cassava mosaic virus, East African cassava mosaic virus",
+      "crop": "cassava",
+      "category": "viral",
+      "is_disease": true,
+      "severity": {
+        "level": "very_high",
+        "scale": 5,
+        "max_scale": 5,
+        "description": "Most devastating cassava disease in Africa. Can cause complete crop failure in susceptible varieties."
+      },
+      "symptoms": [
+        "Mosaic pattern of yellow/light green and dark green patches on leaves",
+        "Leaf curling, twisting, and distortion",
+        "Reduced leaf size compared to healthy plants",
+        "Severely stunted plant growth",
+        "Misshapen, small, or no tuber formation",
+        "Chlorosis (yellowing) along leaf veins",
+        "Leaves may become completely yellow in severe cases"
+      ],
+      "how_it_spreads": [
+        "Whiteflies (Bemisia tabaci) - primary vector, transmit virus while feeding",
+        "Infected stem cuttings used for planting - carries virus to new fields",
+        "Mechanical transmission through contaminated tools (minor)",
+        "NOT spread by contact between plants or through soil"
+      ],
+      "favorable_conditions": {
+        "temperature": "25-35°C",
+        "humidity": "Variable - disease occurs in all humidity levels",
+        "season": "Year-round, but more severe in dry season when whitefly populations peak",
+        "other": "High whitefly populations, planting infected cuttings, presence of infected plants nearby"
+      },
+      "yield_loss": {
+        "min_percent": 30,
+        "max_percent": 95,
+        "average_percent": 50,
+        "description": "Can cause 30-95% yield loss. Severely infected plants may produce no usable tubers at all."
+      },
+      "treatments": {
+        "cultural": [
+          {
+            "method": "Use virus-free planting materials",
+            "description": "Source stem cuttings only from certified disease-free multiplication sites. Never take cuttings from infected plants.",
+            "effectiveness": "very_high",
+            "cost_ngn": 0,
+            "timing": "Before planting"
+          },
+          {
+            "method": "Roguing infected plants",
+            "description": "Remove and destroy infected plants as soon as symptoms appear. This prevents whiteflies from spreading virus to healthy plants.",
+            "effectiveness": "high",
+            "cost_ngn_per_hectare": 5000,
+            "timing": "Weekly scouting and removal"
+          },
+          {
+            "method": "Early planting",
+            "description": "Plant at onset of rains when whitefly populations are lower. This gives plants time to establish before peak whitefly season.",
+            "effectiveness": "medium",
+            "cost_ngn": 0,
+            "timing": "Start of rainy season"
+          },
+          {
+            "method": "Remove volunteer plants",
+            "description": "Remove any cassava plants that grow from previous season's debris. These can harbor virus.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare": 3000,
+            "timing": "Before and during planting"
+          }
+        ],
+        "chemical": [
+          {
+            "product_name": "Imidacloprid (for whitefly control)",
+            "active_ingredient": "Imidacloprid",
+            "local_brands": [
+              "Confidor",
+              "Gaucho",
+              "Admire",
+              "Kohinor"
+            ],
+            "cost_ngn_min": 5000,
+            "cost_ngn_max": 12000,
+            "cost_unit": "per hectare per application",
+            "dosage": "Follow label instructions - typically 100-200ml per hectare",
+            "frequency": "Every 2-3 weeks when whitefly pressure is high",
+            "application_method": "Spray on leaves, targeting undersides where whiteflies feed",
+            "effectiveness": "medium",
+            "important_note": "This controls whiteflies but does NOT cure already infected plants. Infected plants must be removed.",
+            "safety_precautions": [
+              "Highly toxic to bees - apply in evening when bees are not active",
+              "Wear protective clothing and gloves",
+              "Do not spray near water sources",
+              "Follow pre-harvest interval on label"
+            ]
+          }
+        ],
+        "resistant_varieties": [
+          {
+            "variety_name": "TME 419",
+            "resistance_level": "very_high",
+            "source": "IITA Ibadan, state ADPs",
+            "cost_ngn_per_bundle": 20000,
+            "notes": "Most widely recommended CMD-resistant variety. High yield."
+          },
+          {
+            "variety_name": "UMUCASS 36 (TMS 01/1368)",
+            "resistance_level": "very_high",
+            "source": "NRCRI Umudike",
+            "cost_ngn_per_bundle": 22000,
+            "notes": "Excellent CMD resistance with high dry matter content"
+          },
+          {
+            "variety_name": "UMUCASS 37 (TMS 01/1412)",
+            "resistance_level": "very_high",
+            "source": "NRCRI Umudike",
+            "cost_ngn_per_bundle": 22000,
+            "notes": "Good for garri processing"
+          },
+          {
+            "variety_name": "UMUCASS 38 (TMS 01/1371)",
+            "resistance_level": "high",
+            "source": "NRCRI Umudike",
+            "cost_ngn_per_bundle": 20000,
+            "notes": "Multiple disease resistance"
+          },
+          {
+            "variety_name": "TMS 98/0581",
+            "resistance_level": "high",
+            "source": "IITA Ibadan",
+            "cost_ngn_per_bundle": 18000,
+            "notes": "Good yield with CMD tolerance"
+          }
+        ],
+        "traditional": [
+          {
+            "method": "Neem leaf extract spray",
+            "description": "Crush 1kg fresh neem leaves, soak in 5 liters of water overnight, strain and spray. Repels whiteflies.",
+            "effectiveness": "low",
+            "cost_ngn": 2000
+          }
+        ]
+      },
+      "total_treatment_cost": {
+        "min_ngn": 5000,
+        "max_ngn": 35000,
+        "per": "hectare",
+        "notes": "IMPORTANT: There is NO CURE for viral diseases. The best investment is planting resistant varieties. Infected plants cannot be cured and must be removed."
+      },
+      "prevention": [
+        "Plant CMD-resistant varieties (TME 419, UMUCASS 36, 37, 38) - MOST IMPORTANT",
+        "Source planting materials only from certified disease-free sources",
+        "Never take cuttings from plants showing any mosaic symptoms",
+        "Control whitefly populations with insecticides or neem extracts",
+        "Remove and burn all volunteer cassava plants from previous seasons",
+        "Practice thorough field sanitation after harvest",
+        "Avoid planting new cassava fields adjacent to infected fields",
+        "Inspect plants weekly and remove infected ones immediately",
+        "Do not transport cuttings from areas with high CMD incidence"
+      ],
+      "health_projection": {
+        "early_detection": {
+          "recovery_chance_percent": 70,
+          "message": "If you detect CMD early and immediately remove infected plants, you can protect approximately 70% of your yield. The key is stopping spread to healthy plants."
+        },
+        "moderate_infection": {
+          "recovery_chance_percent": 40,
+          "message": "With moderate infection across the field, focus on removing all infected plants and protecting the remaining healthy ones. Expected yield recovery is about 40%."
+        },
+        "severe_infection": {
+          "recovery_chance_percent": 10,
+          "message": "Severe CMD infection has spread widely. This season's harvest will be significantly reduced. Plan to replant next season using resistant varieties only."
+        }
+      },
+      "expert_contact": {
+        "institution": "International Institute of Tropical Agriculture (IITA)",
+        "location": "Ibadan, Oyo State, Nigeria",
+        "services": "CMD-resistant varieties, disease diagnosis, training on CMD management"
+      }
+    },
+    "cocoa_monilia_disease": {
+      "id": "CMN_001",
+      "class_name": "Cocoa Monilia Disease",
+      "display_name": "Frosty Pod Rot (Monilia Disease)",
+      "scientific_name": "Moniliophthora roreri",
+      "crop": "cocoa",
+      "category": "fungal",
+      "is_disease": true,
+      "severity": {
+        "level": "high",
+        "scale": 4,
+        "max_scale": 5,
+        "description": "Serious fungal disease that can destroy entire pod harvests. The white 'frosty' spore covering produces millions of spores that spread rapidly."
+      },
+      "symptoms": [
+        "White or cream-colored powdery coating on pods giving a 'frosty' appearance",
+        "Brown spots that enlarge rapidly on pod surface",
+        "Irregular swelling or lumps on pods before external symptoms appear",
+        "Internal pod rot with liquefied, foul-smelling pulp",
+        "Premature ripening or blackening of pods",
+        "Beans inside become sticky, clumped together, and unusable",
+        "Strong unpleasant odor from infected pods"
+      ],
+      "how_it_spreads": [
+        "Wind dispersal of spores from infected pods - can travel several kilometers",
+        "Rain splash spreading spores to nearby pods",
+        "Contact with infected pods during harvesting",
+        "Contaminated harvesting tools (machetes, baskets)",
+        "Leaving infected pods on trees or ground provides continuous spore source"
+      ],
+      "favorable_conditions": {
+        "temperature": "20-28°C (optimal around 25°C)",
+        "humidity": "Above 85%",
+        "season": "Peak during rainy season, especially with prolonged wet periods",
+        "other": "Poor air circulation, excessive shade, leaving infected pods in field"
+      },
+      "yield_loss": {
+        "min_percent": 25,
+        "max_percent": 90,
+        "average_percent": 50,
+        "description": "Can cause 25-90% pod losses in favorable conditions. Unmanaged outbreaks can destroy nearly entire harvests."
+      },
+      "treatments": {
+        "cultural": [
+          {
+            "method": "Weekly removal and destruction of infected pods",
+            "description": "Inspect all trees weekly. Remove any pod showing symptoms. Bury pods 30cm deep or burn them. Never leave infected pods on ground.",
+            "effectiveness": "high",
+            "cost_ngn_per_hectare": 10000,
+            "cost_frequency": "per month (labor)"
+          },
+          {
+            "method": "Shade management",
+            "description": "Reduce shade canopy to 50% to improve air circulation and reduce humidity in the canopy.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare": 15000,
+            "cost_frequency": "one-time pruning cost"
+          },
+          {
+            "method": "Tree pruning",
+            "description": "Regular pruning to open up tree canopy, improve air flow, and make pods more accessible for inspection and harvesting.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare": 20000,
+            "cost_frequency": "annually"
+          },
+          {
+            "method": "Prompt harvesting",
+            "description": "Harvest mature pods immediately. Overripe pods are more susceptible to infection.",
+            "effectiveness": "medium",
+            "cost_ngn": 0
+          }
+        ],
+        "chemical": [
+          {
+            "product_name": "Copper-based fungicide",
+            "active_ingredient": "Copper hydroxide or Copper oxychloride",
+            "local_brands": [
+              "Kocide 101",
+              "Nordox 75",
+              "Koka Blue 50 WG",
+              "Funguran-OH"
+            ],
+            "cost_ngn_min": 15000,
+            "cost_ngn_max": 25000,
+            "cost_unit": "per hectare per application",
+            "dosage": "2.5-3 kg per hectare in 500L water",
+            "frequency": "Monthly during pod development season",
+            "application_method": "Spray pods thoroughly, especially young developing pods. Focus on lower trunk where pods form.",
+            "effectiveness": "medium",
+            "safety_precautions": [
+              "Wear protective clothing and mask",
+              "Apply in calm weather conditions",
+              "Avoid spraying during rain"
+            ]
+          },
+          {
+            "product_name": "Metalaxyl + Mancozeb combination",
+            "active_ingredient": "Metalaxyl 12% + Mancozeb 60%",
+            "local_brands": [
+              "Ridomil Gold MZ",
+              "Agro-laxyl 63.5 WP"
+            ],
+            "cost_ngn_min": 20000,
+            "cost_ngn_max": 35000,
+            "cost_unit": "per hectare per application",
+            "dosage": "2-2.5 kg per hectare",
+            "frequency": "Every 3-4 weeks during critical period (peak rainy season)",
+            "application_method": "Apply as preventive treatment before disease onset for best results",
+            "effectiveness": "high",
+            "safety_precautions": [
+              "Wear full protective equipment",
+              "Do not apply within 14 days of harvest",
+              "Store away from food items"
+            ]
+          }
+        ],
+        "biological": [
+          {
+            "method": "Trichoderma-based biocontrol",
+            "description": "Beneficial fungi that compete with and suppress disease fungi. Spray on pods and trunk.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare_min": 12000,
+            "cost_ngn_per_hectare_max": 20000,
+            "source": "Available from CRIN (Cocoa Research Institute of Nigeria) and some agro-dealers",
+            "notes": "Best used as part of integrated management, not as sole treatment"
+          }
+        ],
+        "traditional": [
+          {
+            "method": "Palm oil coating on pods",
+            "description": "Mix palm oil with water, spray on young pods. Creates a physical barrier against spore infection.",
+            "effectiveness": "low",
+            "cost_ngn": 5000,
+            "notes": "Traditional method with limited scientific validation"
+          }
+        ]
+      },
+      "total_treatment_cost": {
+        "min_ngn": 15000,
+        "max_ngn": 50000,
+        "per": "hectare per season",
+        "notes": "Combination of regular pod removal (sanitation) with fungicide application gives best results"
+      },
+      "prevention": [
+        "Inspect trees and remove infected pods at least weekly",
+        "Maintain shade canopy at 50% for good air circulation",
+        "Prune trees regularly to reduce humidity in canopy",
+        "Harvest mature pods promptly - do not leave overripe pods",
+        "Never leave infected or rotting pods on trees or ground",
+        "Bury removed pods at least 30cm deep or burn them",
+        "Clean harvesting tools between trees using soap solution",
+        "Apply preventive fungicide sprays before peak disease season",
+        "Maintain good drainage in plantation"
+      ],
+      "health_projection": {
+        "early_detection": {
+          "recovery_chance_percent": 75,
+          "message": "Early detection with immediate pod removal can save approximately 75% of your harvest. Start weekly inspections now and remove every infected pod."
+        },
+        "moderate_infection": {
+          "recovery_chance_percent": 50,
+          "message": "Moderate infection requires intensive sanitation combined with fungicide application. With immediate action, expect to save about 50% of remaining pods."
+        },
+        "severe_infection": {
+          "recovery_chance_percent": 25,
+          "message": "Severe frosty pod rot outbreak. Remove all infected pods, apply fungicide to protect remaining healthy pods. Focus on protecting next season's production."
+        }
+      },
+      "expert_contact": {
+        "institution": "Cocoa Research Institute of Nigeria (CRIN)",
+        "location": "Ibadan, Oyo State, Nigeria",
+        "services": "Disease diagnosis, fungicide recommendations, resistant varieties, extension services"
+      }
+    },
+    "cocoa_phytophthora_disease": {
+      "id": "CPH_001",
+      "class_name": "Cocoa Phytophthora Disease",
+      "display_name": "Black Pod Disease",
+      "scientific_name": "Phytophthora palmivora and Phytophthora megakarya",
+      "crop": "cocoa",
+      "category": "oomycete",
+      "is_disease": true,
+      "severity": {
+        "level": "very_high",
+        "scale": 5,
+        "max_scale": 5,
+        "description": "Most serious cocoa disease in West Africa. P. megakarya (found in Nigeria) is more aggressive than P. palmivora and can destroy 60-100% of pods in severe outbreaks."
+      },
+      "symptoms": [
+        "Dark brown to black lesions starting at any point on the pod",
+        "Lesions spread very rapidly, covering entire pod within 10-14 days",
+        "White or grayish mold growth on pod surface in humid conditions",
+        "Firm pod becomes soft as internal rot progresses",
+        "Beans inside become shriveled, stuck together, and turn black",
+        "Canker lesions on stem bark with reddish-brown gum exudation",
+        "Wilting of leaves and dieback of branches in severe trunk infections"
+      ],
+      "how_it_spreads": [
+        "Rain splash from infected pods - most important method",
+        "Infected pods on ground serve as continuous source of spores",
+        "Ants (especially Crematogaster striatula) carry spores between pods",
+        "Wind-driven rain spreading spores",
+        "Contaminated harvesting tools",
+        "Spores can survive in soil and plant debris"
+      ],
+      "favorable_conditions": {
+        "temperature": "20-30°C (optimal around 25°C)",
+        "humidity": "Above 85%",
+        "season": "Peak during rainy season (May-October in southern Nigeria)",
+        "other": "High rainfall, poor drainage, excessive shade, infected pods left in field"
+      },
+      "yield_loss": {
+        "min_percent": 30,
+        "max_percent": 90,
+        "average_percent": 60,
+        "description": "Causes 30-90% pod losses. P. megakarya infections are faster and more destructive than P. palmivora. Annual losses estimated at over $700 million globally."
+      },
+      "treatments": {
+        "cultural": [
+          {
+            "method": "Frequent pod removal",
+            "description": "Remove all infected pods every 5-7 days. Bury pods at least 30cm deep or burn them. Never leave on ground surface.",
+            "effectiveness": "high",
+            "cost_ngn_per_hectare": 15000,
+            "cost_frequency": "per month (labor)"
+          },
+          {
+            "method": "Improve drainage",
+            "description": "Create drainage channels to prevent waterlogging. Remove stagnant water from around trees.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare": 30000,
+            "cost_frequency": "one-time installation"
+          },
+          {
+            "method": "Shade and canopy management",
+            "description": "Maintain 50% shade, prune lower branches, and thin canopy to improve air circulation and reduce humidity.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare": 25000,
+            "cost_frequency": "annually"
+          },
+          {
+            "method": "Ant control",
+            "description": "Destroy ant nests around trees. Ants spread disease spores between pods.",
+            "effectiveness": "low",
+            "cost_ngn_per_hectare": 5000
+          }
+        ],
+        "chemical": [
+          {
+            "product_name": "Metalaxyl + Copper combination",
+            "active_ingredient": "Metalaxyl 12% + Copper-1-oxide 60%",
+            "local_brands": [
+              "Ridomil 72 Plus",
+              "Foko",
+              "Ridomil Gold Plus"
+            ],
+            "cost_ngn_min": 25000,
+            "cost_ngn_max": 40000,
+            "cost_unit": "per hectare per application",
+            "dosage": "2.5-3 kg per hectare in 500L water",
+            "frequency": "3-4 applications during peak season (June, August, September, October)",
+            "application_method": "Spray on all pods and lower trunk. Most effective when applied before disease onset.",
+            "effectiveness": "very_high",
+            "safety_precautions": [
+              "Wear full protective equipment",
+              "Apply in calm weather",
+              "Follow label directions exactly",
+              "Observe pre-harvest interval"
+            ]
+          },
+          {
+            "product_name": "Copper fungicide",
+            "active_ingredient": "Copper hydroxide",
+            "local_brands": [
+              "Kocide 101",
+              "Nordox 75",
+              "Blue Shield",
+              "Funguran-OH"
+            ],
+            "cost_ngn_min": 15000,
+            "cost_ngn_max": 25000,
+            "cost_unit": "per hectare per application",
+            "dosage": "2-3 kg per hectare",
+            "frequency": "Every 3-4 weeks during rainy season",
+            "application_method": "Thorough coverage of all pods. Contact fungicide - must cover pod surface to protect.",
+            "effectiveness": "medium"
+          },
+          {
+            "product_name": "Phosphonate (trunk injection)",
+            "active_ingredient": "Fosetyl-Al or Phosphorous acid",
+            "local_brands": [
+              "Foli-R-Fos 400",
+              "Aliette"
+            ],
+            "cost_ngn_min": 35000,
+            "cost_ngn_max": 50000,
+            "cost_unit": "per hectare per application",
+            "dosage": "As per label - injected into trunk",
+            "frequency": "1-2 times per season",
+            "application_method": "Inject directly into main trunk. Provides systemic protection throughout tree.",
+            "effectiveness": "very_high",
+            "notes": "Requires training for proper application technique"
+          }
+        ],
+        "biological": [
+          {
+            "method": "Trichoderma asperellum",
+            "description": "Beneficial fungus that parasitizes Phytophthora. Applied as spray to pods and trunk.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare_min": 15000,
+            "cost_ngn_per_hectare_max": 25000,
+            "source": "Research stage in Nigeria - contact CRIN for availability",
+            "notes": "Reduces disease but not as effective as chemical fungicides in severe outbreaks"
+          }
+        ],
+        "traditional": [
+          {
+            "method": "Ash application",
+            "description": "Apply wood ash around base of trees. May help reduce soil moisture and spore survival.",
+            "effectiveness": "low",
+            "cost_ngn": 2000
+          }
+        ]
+      },
+      "total_treatment_cost": {
+        "min_ngn": 25000,
+        "max_ngn": 80000,
+        "per": "hectare per season",
+        "notes": "6-8 fungicide applications may be needed in severe areas. Combining sanitation with fewer fungicide sprays is most cost-effective."
+      },
+      "prevention": [
+        "Remove and destroy infected pods every 5-7 days - most important practice",
+        "Maintain proper tree spacing and reduce shade to 50%",
+        "Improve drainage in waterlogged areas",
+        "Harvest pods as soon as they mature - do not leave overripe",
+        "Control ant populations that spread spores",
+        "Apply preventive fungicide sprays before rainy season peak",
+        "Remove all pods from ground surface",
+        "Prune lower branches to reduce humidity near pods",
+        "Clean tools between trees with soap solution",
+        "Remove mummified pods from previous seasons"
+      ],
+      "health_projection": {
+        "early_detection": {
+          "recovery_chance_percent": 80,
+          "message": "With immediate treatment and sanitation, approximately 80% of remaining healthy pods can be saved. Begin fungicide application and twice-weekly pod removal immediately."
+        },
+        "moderate_infection": {
+          "recovery_chance_percent": 50,
+          "message": "Apply fungicide immediately and intensify pod removal to every 5 days. With aggressive management, expect to save about 50% of your crop."
+        },
+        "severe_infection": {
+          "recovery_chance_percent": 20,
+          "message": "Severe black pod outbreak. This season's harvest is significantly compromised. Focus sanitation and fungicide efforts on protecting next season's production."
+        }
+      },
+      "expert_contact": {
+        "institution": "Cocoa Research Institute of Nigeria (CRIN)",
+        "location": "Ibadan, Oyo State, Nigeria",
+        "services": "Disease diagnosis, fungicide recommendations, integrated management training, tolerant varieties"
+      }
+    },
+    "tomato_gray_mold": {
+      "id": "TGM_001",
+      "class_name": "Tomato Gray Mold Disease",
+      "display_name": "Gray Mold (Botrytis Blight)",
+      "scientific_name": "Botrytis cinerea",
+      "crop": "tomato",
+      "category": "fungal",
+      "is_disease": true,
+      "severity": {
+        "level": "high",
+        "scale": 4,
+        "max_scale": 5,
+        "description": "Common and destructive fungal disease especially in humid conditions. Can affect all above-ground plant parts and cause significant post-harvest losses."
+      },
+      "symptoms": [
+        "Soft, water-soaked spots on leaves, stems, and fruits",
+        "Distinctive gray fuzzy mold growth (spores) on infected areas",
+        "Brown to tan lesions on stems, often at pruning wounds or leaf scars",
+        "Blossom blight - flowers turn brown, wither, and fall off",
+        "Ghost spots on fruits - pale rings with darker centers",
+        "Fruit rot starting from stem end, wounds, or where fruit touches ground",
+        "Stem cankers that can girdle and kill plant"
+      ],
+      "how_it_spreads": [
+        "Airborne spores (conidia) - primary spread method, released in clouds when disturbed",
+        "Splashing water from rain or overhead irrigation",
+        "Contaminated hands, tools, and clothing",
+        "Infected plant debris in soil - fungus survives as sclerotia",
+        "Entry through wounds, pruning cuts, flower scars, or senescent tissue"
+      ],
+      "favorable_conditions": {
+        "temperature": "15-25°C (optimal around 20°C)",
+        "humidity": "Above 93% for at least 8-12 hours",
+        "season": "Cool, cloudy, humid weather conditions",
+        "other": "Poor air circulation, overhead irrigation, wounded plants, dense plant canopy"
+      },
+      "yield_loss": {
+        "min_percent": 15,
+        "max_percent": 50,
+        "average_percent": 25,
+        "description": "Can cause 15-50% losses in greenhouses. Field losses typically lower but can be severe in prolonged wet weather."
+      },
+      "treatments": {
+        "cultural": [
+          {
+            "method": "Improve air circulation",
+            "description": "Increase plant spacing, stake plants properly, prune lower leaves, and ensure good ventilation in greenhouses.",
+            "effectiveness": "high",
+            "cost_ngn": 0
+          },
+          {
+            "method": "Remove infected plant parts",
+            "description": "Immediately remove and destroy (burn or bury) any infected leaves, stems, flowers, or fruits. Do not compost.",
+            "effectiveness": "high",
+            "cost_ngn_per_week": 3000
+          },
+          {
+            "method": "Avoid overhead irrigation",
+            "description": "Use drip irrigation to keep foliage dry. Water early in day so plants dry before evening.",
+            "effectiveness": "high",
+            "cost_ngn_per_hectare": 50000,
+            "notes": "One-time drip system installation cost"
+          },
+          {
+            "method": "Prune lower leaves",
+            "description": "Remove leaves touching the ground and lower leaves to improve air flow around plants.",
+            "effectiveness": "medium",
+            "cost_ngn_per_week": 5000
+          },
+          {
+            "method": "Reduce humidity in greenhouse",
+            "description": "Ventilate greenhouse, especially in evening. Heat and vent to reduce humidity below 85%.",
+            "effectiveness": "high",
+            "cost_ngn": 0
+          }
+        ],
+        "chemical": [
+          {
+            "product_name": "Fludioxonil",
+            "active_ingredient": "Fludioxonil",
+            "local_brands": [
+              "Scholar",
+              "Medallion",
+              "Geoxe"
+            ],
+            "cost_ngn_min": 12000,
+            "cost_ngn_max": 20000,
+            "cost_unit": "per hectare per application",
+            "dosage": "Follow label directions",
+            "frequency": "Every 7-10 days during humid periods",
+            "application_method": "Spray to thorough coverage of all plant parts",
+            "effectiveness": "very_high",
+            "notes": "One of the most effective fungicides for gray mold"
+          },
+          {
+            "product_name": "Chlorothalonil",
+            "active_ingredient": "Chlorothalonil",
+            "local_brands": [
+              "Daconil",
+              "Bravo",
+              "Echo"
+            ],
+            "cost_ngn_min": 8000,
+            "cost_ngn_max": 15000,
+            "cost_unit": "per hectare per application",
+            "dosage": "2-2.5 L per hectare",
+            "frequency": "Every 7-14 days",
+            "application_method": "Apply as preventive spray before disease onset",
+            "effectiveness": "medium",
+            "safety_precautions": [
+              "Wait 7 days between last spray and harvest",
+              "Wear protective equipment",
+              "Do not apply in extreme heat"
+            ]
+          },
+          {
+            "product_name": "Iprodione",
+            "active_ingredient": "Iprodione",
+            "local_brands": [
+              "Rovral",
+              "Chipco"
+            ],
+            "cost_ngn_min": 10000,
+            "cost_ngn_max": 18000,
+            "cost_unit": "per hectare per application",
+            "dosage": "1-1.5 kg per hectare",
+            "frequency": "Every 10-14 days",
+            "application_method": "Spray on foliage and stems",
+            "effectiveness": "high",
+            "notes": "Rotate with other fungicide classes to prevent resistance"
+          }
+        ],
+        "biological": [
+          {
+            "method": "Bacillus subtilis biofungicide",
+            "description": "Biological fungicide that colonizes plant surfaces and competes with disease fungi.",
+            "product_names": [
+              "Serenade",
+              "Cease"
+            ],
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare_min": 10000,
+            "cost_ngn_per_hectare_max": 18000,
+            "notes": "Best used preventively. Approved for organic production."
+          }
+        ],
+        "traditional": [
+          {
+            "method": "Neem oil spray",
+            "description": "Mix 5ml neem oil per liter of water with small amount of liquid soap. Spray weekly as preventive.",
+            "effectiveness": "low",
+            "cost_ngn": 5000
+          },
+          {
+            "method": "Garlic extract spray",
+            "description": "Crush 100g garlic, soak in 1 liter water for 24 hours, strain and spray. Has some antifungal properties.",
+            "effectiveness": "low",
+            "cost_ngn": 3000
+          }
+        ]
+      },
+      "total_treatment_cost": {
+        "min_ngn": 8000,
+        "max_ngn": 25000,
+        "per": "hectare per application",
+        "notes": "Prevention through cultural practices (spacing, irrigation method, pruning) is most cost-effective approach"
+      },
+      "prevention": [
+        "Maintain good air circulation between plants with proper spacing",
+        "Use drip irrigation instead of overhead watering",
+        "Remove plant debris and fallen leaves promptly",
+        "Prune lower leaves to improve air flow at plant base",
+        "Avoid working with plants when foliage is wet",
+        "Sanitize pruning tools with 10% bleach solution between plants",
+        "Ventilate greenhouses to reduce humidity, especially at night",
+        "Apply preventive fungicides during cool, humid weather forecasts",
+        "Avoid excessive nitrogen fertilization which creates dense, soft growth",
+        "Remove crop debris thoroughly at end of season"
+      ],
+      "health_projection": {
+        "early_detection": {
+          "recovery_chance_percent": 85,
+          "message": "Early treatment with fungicide and good sanitation can protect approximately 85% of your crop. Remove all infected parts immediately and improve air circulation."
+        },
+        "moderate_infection": {
+          "recovery_chance_percent": 60,
+          "message": "Remove all infected plant parts immediately, apply fungicide, and reduce humidity. With aggressive management, about 60% of crop can be saved."
+        },
+        "severe_infection": {
+          "recovery_chance_percent": 30,
+          "message": "Severe gray mold outbreak requires intensive fungicide program and complete removal of infected plants. Expect significant yield reduction this season."
+        }
+      }
+    },
+    "tomato_wilt_disease": {
+      "id": "TWD_001",
+      "class_name": "Tomato Wilt Disease",
+      "display_name": "Tomato Wilt Disease",
+      "scientific_name": "Fusarium oxysporum f. sp. lycopersici (Fusarium wilt) or Ralstonia solanacearum (Bacterial wilt)",
+      "crop": "tomato",
+      "category": "fungal_or_bacterial",
+      "is_disease": true,
+      "severity": {
+        "level": "very_high",
+        "scale": 5,
+        "max_scale": 5,
+        "description": "Devastating soil-borne diseases that block water transport in plants. Bacterial wilt (common in tropical Nigeria) can kill plants within days and has no chemical cure."
+      },
+      "symptoms": [
+        "Wilting of leaves and stems, often starting on one side of plant",
+        "Yellowing of lower leaves, progressing upward",
+        "Wilting during hottest part of day, partial recovery at night (early stage)",
+        "Permanent wilting that does not recover even with watering",
+        "Brown discoloration of vascular tissue (cut stem to see brown streaks)",
+        "Bacterial wilt: milky white bacterial ooze when cut stem is placed in water",
+        "Stunted growth and eventual plant death",
+        "Fusarium wilt: symptoms may appear on one side of plant or leaf first"
+      ],
+      "how_it_spreads": [
+        "Contaminated soil - pathogens survive in soil for many years",
+        "Infected transplants from nurseries",
+        "Contaminated water (bacterial wilt spreads easily in irrigation water)",
+        "Tools and equipment that moved soil between fields",
+        "Root-to-root contact between plants",
+        "Nematode damage to roots facilitates infection",
+        "Workers' boots and clothing carrying contaminated soil"
+      ],
+      "favorable_conditions": {
+        "temperature": "Fusarium: 27-28°C optimal; Bacterial wilt: 30-35°C optimal",
+        "humidity": "High soil moisture favors bacterial wilt",
+        "season": "Year-round in Nigeria, worse during rainy season",
+        "other": "Poor drainage, root damage from nematodes, acidic soil (for Fusarium), continuous cropping"
+      },
+      "yield_loss": {
+        "min_percent": 30,
+        "max_percent": 100,
+        "average_percent": 60,
+        "description": "Can cause 30-100% losses. Bacterial wilt can destroy an entire field within 2-3 weeks in favorable conditions."
+      },
+      "treatments": {
+        "cultural": [
+          {
+            "method": "Remove and destroy infected plants",
+            "description": "Immediately remove wilted plants including roots. Burn or bury at least 1 meter deep away from field. Do not compost.",
+            "effectiveness": "medium",
+            "cost_ngn_per_plant": 100
+          },
+          {
+            "method": "Long crop rotation",
+            "description": "Rotate away from tomatoes and related crops (pepper, eggplant, potato) for 4-5 years minimum.",
+            "effectiveness": "medium",
+            "cost_ngn": 0,
+            "notes": "Pathogens can survive in soil for many years"
+          },
+          {
+            "method": "Improve drainage",
+            "description": "Plant on raised beds or ridges. Ensure good soil drainage. Avoid waterlogging.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare": 20000
+          },
+          {
+            "method": "Soil solarization",
+            "description": "Cover moist soil with clear plastic during hottest months for 4-6 weeks. Heat kills pathogens in top soil layer.",
+            "effectiveness": "medium",
+            "cost_ngn_per_hectare": 30000
+          },
+          {
+            "method": "Use disease-free transplants",
+            "description": "Purchase transplants only from certified disease-free nurseries. Inspect roots before planting.",
+            "effectiveness": "high",
+            "cost_ngn_premium": 5000
+          },
+          {
+            "method": "Grafting onto resistant rootstocks",
+            "description": "Graft susceptible varieties onto wilt-resistant rootstocks. Provides excellent protection.",
+            "effectiveness": "very_high",
+            "cost_ngn_per_plant": 150,
+            "notes": "Labor intensive but very effective"
+          }
+        ],
+        "chemical": [
+          {
+            "product_name": "Soil fumigant (for Fusarium)",
+            "active_ingredient": "Metam sodium or Dazomet",
+            "local_brands": [
+              "Vapam",
+              "Basamid"
+            ],
+            "cost_ngn_min": 80000,
+            "cost_ngn_max": 150000,
+            "cost_unit": "per hectare",
+            "dosage": "Follow label directions carefully",
+            "application_method": "Apply to soil before planting, cover with plastic, wait 2-3 weeks before planting",
+            "effectiveness": "medium",
+            "important_note": "Expensive and may harm beneficial soil organisms. Not effective against bacterial wilt.",
+            "safety_precautions": [
+              "Highly toxic - requires professional application",
+              "Keep people and animals away during treatment",
+              "Follow all waiting periods before planting"
+            ]
+          },
+          {
+            "product_name": "Note on bacterial wilt",
+            "description": "There are NO effective chemical treatments for bacterial wilt. Focus entirely on prevention and resistant varieties.",
+            "effectiveness": "none"
+          }
+        ],
+        "resistant_varieties": [
+          {
+            "resistance_type": "Fusarium wilt resistant (F, F2, F3)",
+            "description": "Many commercial varieties have resistance to Fusarium races. Look for F, F2, or F3 on seed packets.",
+            "effectiveness": "high",
+            "notes": "Different races exist - variety may resist some but not all"
+          },
+          {
+            "resistance_type": "Bacterial wilt resistant",
+            "description": "Few varieties have true resistance. Some have tolerance. Grafting onto resistant rootstocks is most effective.",
+            "effectiveness": "medium",
+            "notes": "Check with local extension for recommended varieties"
+          }
+        ],
+        "biological": [
+          {
+            "method": "Trichoderma application",
+            "description": "Apply Trichoderma-based products to soil before planting. Colonizes roots and provides some protection.",
+            "effectiveness": "low_to_medium",
+            "cost_ngn_per_hectare": 15000,
+            "notes": "Best as part of integrated management, not sole treatment"
+          },
+          {
+            "method": "Mycorrhizal inoculants",
+            "description": "Apply mycorrhizal fungi to transplant roots. Improves root health and provides some disease suppression.",
+            "effectiveness": "low",
+            "cost_ngn_per_hectare": 10000
+          }
+        ],
+        "traditional": [
+          {
+            "method": "Organic matter addition",
+            "description": "Add well-composted organic matter to soil. Improves soil health and beneficial microbe populations.",
+            "effectiveness": "low",
+            "cost_ngn_per_hectare": 20000
+          },
+          {
+            "method": "Lime application (for Fusarium)",
+            "description": "Raise soil pH to 6.5-7.0 with agricultural lime. Fusarium prefers acidic soils.",
+            "effectiveness": "low",
+            "cost_ngn_per_hectare": 15000
+          }
+        ]
+      },
+      "total_treatment_cost": {
+        "min_ngn": 20000,
+        "max_ngn": 150000,
+        "per": "hectare",
+        "notes": "Prevention is far more cost-effective than treatment. Once wilt pathogens are in soil, they persist for years. Invest in resistant varieties and grafted transplants."
+      },
+      "prevention": [
+        "Plant resistant varieties - most important for Fusarium wilt",
+        "Use grafted plants with resistant rootstocks - best for bacterial wilt",
+        "Purchase transplants only from certified disease-free nurseries",
+        "Practice long crop rotation (4-5 years) away from solanaceous crops",
+        "Improve soil drainage - plant on raised beds in wet areas",
+        "Sanitize tools and boots when moving between fields",
+        "Avoid introducing contaminated soil to clean fields",
+        "Control root-knot nematodes that facilitate infection",
+        "Use clean irrigation water - bacterial wilt spreads in water",
+        "Add organic matter to support beneficial soil microorganisms",
+        "Solarize soil in heavily infected areas before replanting",
+        "Never plant in fields with known wilt history without taking precautions"
+      ],
+      "health_projection": {
+        "early_detection": {
+          "recovery_chance_percent": 50,
+          "message": "Remove wilted plants immediately to prevent spread. Remaining plants have about 50% chance if action is taken quickly. Do not replant in same location this season."
+        },
+        "moderate_infection": {
+          "recovery_chance_percent": 25,
+          "message": "Multiple plants affected indicates pathogen is established in soil. Remove all affected plants. Remaining healthy plants are at high risk. Consider abandoning field for this season."
+        },
+        "severe_infection": {
+          "recovery_chance_percent": 5,
+          "message": "Severe wilt outbreak means soil is heavily contaminated. This season's crop is lost. Do not plant tomatoes or related crops in this field for at least 4-5 years. Consider soil solarization before future use."
+        }
+      },
+      "diagnostic_tip": "To distinguish between Fusarium and Bacterial wilt: Cut a stem and place cut end in clear glass of water. If milky white bacterial streaming appears within minutes, it is Bacterial wilt. Fusarium wilt shows brown vascular discoloration but no bacterial ooze."
+    }
+  }
+}

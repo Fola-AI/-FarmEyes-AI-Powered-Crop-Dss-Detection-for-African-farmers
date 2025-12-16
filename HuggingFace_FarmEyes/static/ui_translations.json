@@ -1,0 +1,66 @@
+{
+  "_metadata": {
+    "version": "2.0.0",
+    "languages": ["en", "ha", "yo", "ig"]
+  },
+  
+  "buttons": {
+    "continue": {"en": "Continue", "ha": "Ci gaba", "yo": "Tẹ̀síwájú", "ig": "Gaa n'ihu"},
+    "analyze": {"en": "Analyze Crop", "ha": "Bincika Amfanin Gona", "yo": "Ṣe Àyẹ̀wò", "ig": "Nyochaa"},
+    "new_scan": {"en": "+ New Scan", "ha": "+ Sabon Duba", "yo": "+ Àyẹ̀wò Tuntun", "ig": "+ Nyocha Ọhụụ"},
+    "back": {"en": "Back", "ha": "Koma", "yo": "Padà", "ig": "Laghachi"},
+    "chat": {"en": "Chat with Assistant", "ha": "Yi magana da Mataimaki", "yo": "Bá Olùrànlọ́wọ́ sọ̀rọ̀", "ig": "Soro n'aka Onye enyemaka"},
+    "stop": {"en": "Stop", "ha": "Daina", "yo": "Dúró", "ig": "Kwụsị"}
+  },
+  
+  "diagnosis": {
+    "upload_title": {"en": "Upload Crop Image", "ha": "Ɗora Hoton Amfanin Gona", "yo": "Gbé Àwòrán Sókè", "ig": "Bulite Foto"},
+    "upload_desc": {"en": "Take a clear photo of the affected leaf or plant", "ha": "Ɗauki hoto mai kyau na ganyen da ya kamu", "yo": "Ya àwòrán tó ṣe kedere", "ig": "See foto doro anya"},
+    "click_or_drag": {"en": "Click or drag image here", "ha": "Danna ko ja hoto nan", "yo": "Tẹ tàbí fà àwòrán síbí", "ig": "Pịa ma ọ bụ dọrọ foto ebe a"},
+    "analyzing": {"en": "Analyzing your crop...", "ha": "Ana bincika amfanin gonar ku...", "yo": "A ń ṣe àyẹ̀wò...", "ig": "Anyị na-enyocha..."}
+  },
+  
+  "results": {
+    "title": {"en": "Diagnosis Results", "ha": "Sakamakon Bincike", "yo": "Àbájáde Àyẹ̀wò", "ig": "Nsonaazụ Nyocha"},
+    "confidence": {"en": "Confidence:", "ha": "Tabbaci:", "yo": "Ìgbẹ́kẹ̀lé:", "ig": "Ntụkwasị Obi:"},
+    "transmission": {"en": "How It Spreads", "ha": "Yadda Yake Yaɗuwa", "yo": "Bí Ó Ṣe Ń Tàn", "ig": "Otu Ọ Si Agbasa"},
+    "yield_impact": {"en": "Yield Impact", "ha": "Tasirin Amfanin Gona", "yo": "Ipa Lórí Èso", "ig": "Mmetụta Ọnụ Ego"},
+    "recovery": {"en": "Recovery Chance", "ha": "Damar Murmurewa", "yo": "Àǹfààní Ìmúlàradà", "ig": "Ohere Ịlaghachi"}
+  },
+  
+  "tabs": {
+    "symptoms": {"en": "Symptoms", "ha": "Alamomi", "yo": "Àmì Àrùn", "ig": "Ihe Ngosi"},
+    "treatment": {"en": "Treatment", "ha": "Magani", "yo": "Ìtọ́jú", "ig": "Ọgwụgwọ"},
+    "prevention": {"en": "Prevention", "ha": "Rigakafi", "yo": "Ìdènà", "ig": "Mgbochi"}
+  },
+  
+  "treatment": {
+    "immediate": {"en": "Immediate Actions", "ha": "Matakai na Gaggawa", "yo": "Ìgbésẹ̀ Lẹ́sẹ̀kẹsẹ̀", "ig": "Ihe Ọsịịsọ"},
+    "chemical": {"en": "Chemical Treatment", "ha": "Maganin Sinadari", "yo": "Ìtọ́jú Kẹ́míkà", "ig": "Ọgwụgwọ Kemịkalụ"},
+    "cost": {"en": "Estimated Cost:", "ha": "Ƙiyasin Farashi:", "yo": "Iye Owó:", "ig": "Ego A Tụrụ Anya:"}
+  },
+  
+  "chat": {
+    "discussing": {"en": "Discussing:", "ha": "Muna tattaunawa:", "yo": "A ń sọ̀rọ̀ nípa:", "ig": "Anyị na-atụ:"},
+    "welcome": {"en": "Ask me anything about your diagnosis, treatments, or prevention tips.", "ha": "Tambaye ni komai game da binciken ku.", "yo": "Bi mi nípa àyẹ̀wò rẹ.", "ig": "Jụọ m ihe ọ bụla gbasara nyocha gị."},
+    "placeholder": {"en": "Ask about your diagnosis...", "ha": "Tambaya game da binciken ku...", "yo": "Béèrè nípa àyẹ̀wò rẹ...", "ig": "Jụọ maka nyocha gị..."},
+    "disclaimer": {"en": "FarmEyes provides guidance only. Consult experts for serious cases.", "ha": "FarmEyes yana ba da jagora kawai.", "yo": "FarmEyes pèsè ìtọ́sọ́nà nìkan.", "ig": "FarmEyes na-enye nduzi nọọ."}
+  },
+  
+  "voice": {
+    "listening": {"en": "Listening...", "ha": "Ana saurara...", "yo": "A ń gbọ́...", "ig": "Anyị na-ege..."}
+  },
+  
+  "severity_levels": {
+    "very_high": {"en": "Very High", "ha": "Mai Tsanani Sosai", "yo": "Ga Jù", "ig": "Dị Elu Nnọọ"},
+    "high": {"en": "High", "ha": "Mai Tsanani", "yo": "Ga", "ig": "Dị Elu"},
+    "medium": {"en": "Medium", "ha": "Matsakaici", "yo": "Àárín", "ig": "Etiti"},
+    "low": {"en": "Low", "ha": "Ƙasa", "yo": "Kéré", "ig": "Dị Ala"}
+  },
+  
+  "crops": {
+    "cassava": {"en": "Cassava", "ha": "Rogo", "yo": "Ẹ̀gẹ́", "ig": "Akpụ"},
+    "cocoa": {"en": "Cocoa", "ha": "Koko", "yo": "Koko", "ig": "Koko"},
+    "tomato": {"en": "Tomato", "ha": "Tumatir", "yo": "Tòmátì", "ig": "Tomato"}
+  }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="FarmEyes - AI-Powered Crop Disease Detection for African Farmers">
+    <meta name="theme-color" content="#0D0D0D">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+    
+    <title>FarmEyes - Crop Disease Detection</title>
+    
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="app-container">
+        
+        <!-- ============================================================== -->
+        <!-- PAGE 1: LANGUAGE SELECTOR (Shows First on Startup)              -->
+        <!-- ============================================================== -->
+        <div id="page-language" class="page active">
+            <div class="language-page">
+                <div class="language-content">
+                    <div class="logo-large">🌱</div>
+                    <h1 class="app-title">FarmEyes</h1>
+                    <p class="app-tagline">AI-Powered Crop Disease Detection for African Farmers</p>
+                    
+                    <div class="language-selection">
+                        <h2 class="selection-title">Select Your Language</h2>
+                        <p class="selection-subtitle">Choose your preferred language to continue</p>
+                        
+                        <div class="language-grid">
+                            <!-- English - NO FLAG as requested -->
+                            <button class="language-btn" data-lang="en">
+                                <span class="lang-name">English</span>
+                            </button>
+                            <button class="language-btn" data-lang="ha">
+                                <span class="lang-flag">🇳🇬</span>
+                                <span class="lang-name">Hausa</span>
+                            </button>
+                            <button class="language-btn" data-lang="yo">
+                                <span class="lang-flag">🇳🇬</span>
+                                <span class="lang-name">Yorùbá</span>
+                            </button>
+                            <button class="language-btn" data-lang="ig">
+                                <span class="lang-flag">🇳🇬</span>
+                                <span class="lang-name">Igbo</span>
+                            </button>
+                        </div>
+                        
+                        <button id="btn-continue-language" class="btn-primary btn-continue" disabled>
+                            <span data-i18n="buttons.continue">Continue</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <footer class="page-footer">
+                    <p>Designed with AI Powered N-ATLaS Language Platform</p>
+                </footer>
+            </div>
+        </div>
+        
+        <!-- ============================================================== -->
+        <!-- PAGE 2: DIAGNOSIS (Modern/Classy Design)                        -->
+        <!-- ============================================================== -->
+        <div id="page-diagnosis" class="page">
+            <div class="diagnosis-page">
+                <!-- Header with branding -->
+                <header class="main-header">
+                    <div class="header-brand">
+                        <span class="header-logo">🌱</span>
+                        <div class="header-text">
+                            <h1 class="header-title">FarmEyes</h1>
+                            <p class="header-subtitle">AI-Powered Crop Disease Detection for African Farmers</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button id="btn-language-toggle" class="btn-language">
+                            <span id="current-lang-display">EN</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <div id="language-menu" class="dropdown-menu hidden">
+                            <button class="dropdown-item" data-lang="en">English</button>
+                            <button class="dropdown-item" data-lang="ha">Hausa</button>
+                            <button class="dropdown-item" data-lang="yo">Yorùbá</button>
+                            <button class="dropdown-item" data-lang="ig">Igbo</button>
+                        </div>
+                    </div>
+                </header>
+                
+                <!-- Main Content Area -->
+                <main class="diagnosis-main">
+                    <!-- Upload Section -->
+                    <section id="upload-section" class="upload-section">
+                        <div class="upload-card">
+                            <div class="upload-header">
+                                <span class="upload-icon-small">📸</span>
+                                <h2 data-i18n="diagnosis.upload_title">Upload Crop Image</h2>
+                            </div>
+                            <p class="upload-desc" data-i18n="diagnosis.upload_desc">Take a clear photo of the affected leaf or plant</p>
+                            
+                            <div id="upload-zone" class="upload-zone">
+                                <input type="file" id="file-input" accept="image/*" capture="environment" hidden>
+                                <div class="upload-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
+                                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <p class="upload-text" data-i18n="diagnosis.click_or_drag">Click or drag image here</p>
+                                <span class="upload-formats">JPG, PNG, WEBP (max 10MB)</span>
+                            </div>
+                            
+                            <div id="image-preview-container" class="image-preview-container hidden">
+                                <img id="image-preview" class="image-preview" alt="Preview">
+                                <button id="btn-remove-image" class="btn-remove-image">✕</button>
+                            </div>
+                            
+                            <button id="btn-analyze" class="btn-primary btn-analyze" disabled>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                    <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                                </svg>
+                                <span data-i18n="buttons.analyze">Analyze Crop</span>
+                            </button>
+                            
+                            <div id="analyzing-loader" class="analyzing-loader hidden">
+                                <div class="loader-spinner"></div>
+                                <p data-i18n="diagnosis.analyzing">Analyzing your crop...</p>
+                            </div>
+                            
+                            <div class="supported-crops">
+                                <span class="crop-tag">🌿 Cassava</span>
+                                <span class="crop-tag">🍫 Cocoa</span>
+                                <span class="crop-tag">🍅 Tomato</span>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Results Section -->
+                    <section id="results-section" class="results-section hidden">
+                        <div class="results-header">
+                            <h2>📋 <span data-i18n="results.title">Diagnosis Results</span></h2>
+                            <button id="btn-new-scan" class="btn-text" data-i18n="buttons.new_scan">+ New Scan</button>
+                        </div>
+                        
+                        <!-- Disease Card -->
+                        <div class="disease-card">
+                            <div class="disease-top">
+                                <div class="disease-icon" id="disease-icon">🦠</div>
+                                <div class="disease-info">
+                                    <h3 id="disease-name">Disease Name</h3>
+                                    <span id="crop-type" class="crop-label">Crop</span>
+                                </div>
+                                <span id="severity-badge" class="severity-badge">--</span>
+                            </div>
+                            <div class="disease-confidence">
+                                <span class="conf-label" data-i18n="results.confidence">Confidence:</span>
+                                <div class="conf-bar-wrap">
+                                    <div id="confidence-bar" class="conf-bar"></div>
+                                </div>
+                                <span id="confidence-value" class="conf-value">0%</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Info Tabs -->
+                        <div class="info-card">
+                            <div class="tabs">
+                                <button class="tab-btn active" data-tab="symptoms" data-i18n="tabs.symptoms">Symptoms</button>
+                                <button class="tab-btn" data-tab="treatment" data-i18n="tabs.treatment">Treatment</button>
+                                <button class="tab-btn" data-tab="prevention" data-i18n="tabs.prevention">Prevention</button>
+                            </div>
+                            
+                            <div id="tab-symptoms" class="tab-content active">
+                                <ul id="symptoms-list" class="info-list"></ul>
+                                <div class="info-block">
+                                    <h4 data-i18n="results.transmission">How It Spreads</h4>
+                                    <ul id="transmission-list" class="info-list"></ul>
+                                </div>
+                                <div class="info-block">
+                                    <h4 data-i18n="results.yield_impact">Yield Impact</h4>
+                                    <p id="yield-impact-text"></p>
+                                </div>
+                                <div class="info-block recovery-block">
+                                    <h4 data-i18n="results.recovery">Recovery Chance</h4>
+                                    <div class="recovery-bar-wrap">
+                                        <div id="recovery-bar" class="recovery-bar"></div>
+                                    </div>
+                                    <span id="recovery-text"></span>
+                                </div>
+                            </div>
+                            
+                            <div id="tab-treatment" class="tab-content hidden">
+                                <div class="info-block">
+                                    <h4 data-i18n="treatment.immediate">Immediate Actions</h4>
+                                    <ul id="immediate-actions-list" class="info-list"></ul>
+                                </div>
+                                <div class="info-block">
+                                    <h4 data-i18n="treatment.chemical">Chemical Treatment</h4>
+                                    <div id="chemical-treatments" class="treatment-grid"></div>
+                                </div>
+                                <div class="cost-block">
+                                    <span class="cost-label" data-i18n="treatment.cost">Estimated Cost:</span>
+                                    <span id="cost-estimate" class="cost-value"></span>
+                                </div>
+                            </div>
+                            
+                            <div id="tab-prevention" class="tab-content hidden">
+                                <ul id="prevention-list" class="info-list"></ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Chat Button (Simple but visible) -->
+                        <button id="btn-open-chat" class="btn-chat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                            <span data-i18n="buttons.chat">Chat with Assistant</span>
+                        </button>
+                    </section>
+                </main>
+                
+                <!-- Footer -->
+                <footer class="main-footer">
+                    <p>Designed with AI Powered N-ATLaS Language Platform</p>
+                </footer>
+            </div>
+        </div>
+        
+        <!-- ============================================================== -->
+        <!-- PAGE 3: CHAT (ChatGPT-Inspired Dark Design)                     -->
+        <!-- ============================================================== -->
+        <div id="page-chat" class="page">
+            <div class="chat-page">
+                <header class="chat-header">
+                    <button id="btn-back-diagnosis" class="btn-back">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        <span data-i18n="buttons.back">Back</span>
+                    </button>
+                    <div class="chat-title">
+                        <span>🌱</span> FarmEyes Assistant
+                    </div>
+                    <span id="chat-lang-display" class="chat-lang">EN</span>
+                </header>
+                
+                <div id="chat-context-banner" class="chat-context">
+                    <span data-i18n="chat.discussing">Discussing:</span>
+                    <strong id="context-disease-name">Disease</strong>
+                    <span>•</span>
+                    <span id="context-confidence">0%</span>
+                    <span>•</span>
+                    <span id="context-severity">Severity</span>
+                </div>
+                
+                <div id="chat-messages" class="chat-messages">
+                    <div id="chat-welcome" class="chat-welcome">
+                        <div class="welcome-icon">🌱</div>
+                        <h3>FarmEyes Assistant</h3>
+                        <p data-i18n="chat.welcome">Ask me anything about your diagnosis, treatments, or prevention tips.</p>
+                    </div>
+                </div>
+                
+                <div class="chat-input-wrap">
+                    <div class="chat-input-box">
+                        <textarea id="chat-input" data-i18n-placeholder="chat.placeholder" placeholder="Ask about your diagnosis..." rows="1" maxlength="2000"></textarea>
+                        <button id="btn-voice-input" class="btn-icon btn-voice" title="Voice">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/>
+                                <path d="M19 10v2a7 7 0 01-14 0v-2"/>
+                                <line x1="12" y1="19" x2="12" y2="23"/>
+                            </svg>
+                        </button>
+                        <button id="btn-send-message" class="btn-icon btn-send" title="Send" disabled>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="chat-note" data-i18n="chat.disclaimer">FarmEyes provides guidance only. Consult experts for serious cases.</p>
+                </div>
+                
+                <div id="voice-overlay" class="voice-overlay hidden">
+                    <div class="voice-modal">
+                        <div class="voice-anim">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <p data-i18n="voice.listening">Listening...</p>
+                        <button id="btn-stop-voice" class="btn-secondary" data-i18n="buttons.stop">Stop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Loading Overlay -->
+        <div id="loading-overlay" class="loading-overlay hidden">
+            <div class="loader-spinner large"></div>
+            <p id="loading-text">Loading...</p>
+        </div>
+        
+        <!-- Toast -->
+        <div id="toast-container" class="toast-container"></div>
+    </div>
+    
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/i18n.js"></script>
+    <script src="/static/js/voice.js"></script>
+    <script src="/static/js/tts.js"></script>
+    <script src="/static/js/diagnosis.js"></script>
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
