@@ -847,10 +847,9 @@ SOFTWARE.
 
 ## 📞 Contact
 
-- **Project Lead**: [Your Name]
-- **Email**: [your.email@example.com]
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
+- **Project Lead**: [Afolabi AJao]
+- **Email**: [afolinks@outlook.com]
+- **LinkedIn**: [www.linkedin.com/in/afolabi-ajao-ab8442a7)
 
 ---
 
